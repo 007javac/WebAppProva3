@@ -1,0 +1,9 @@
+﻿@model PersonModel
+@{
+    ViewData["Title"] = "About User";
+}
+<h1>About User</h1>
+<img src="@Model.Photo" alt="Аватар" class="rounded-circle" style="width: 200px; height: 200px; object-fit: cover;"/>
+<p>Name: @Model.FirstName @Model.LastName</p>
+<p>Group Number: @Model.GroupNumber</p>
+<p>About Me: @Model.AboutMe</p>
